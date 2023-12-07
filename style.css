@@ -1,0 +1,89 @@
+header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgb(114, 71, 28);
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+#inputs-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    width: 400px;
+}
+
+.input-container {
+    display: flex;
+    border: 1px solid gray;
+    
+}
+
+#CC-CE-container {
+    display: flex;
+}
+
+#type-90-45-container {
+    display: flex;
+}
+
+#options-container {
+    display: flex;
+}
+
+#output-container {
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+}
+
+#sections-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+.section {
+    display: flex;
+    border: 1px solid green;
+}
+
+.section-calculation-container {
+    border: 1px solid red;
+}
+
+#output-final-elements {
+    display: flex;
+    flex-direction: column;
+    /* attempt to anchor this div to the bottom of it's parent */
+    /* position: absolute;  */
+    bottom: 0;
+}
+
+#total-length-container {
+    display: flex;
+    border: 1px solid blue;
+}
+
+#total-calculation-container {
+    border: 1px solid orange;
+}
+
+#save-project-button-container {
+    border: 1px solid maroon;
+    display: flex;
+    justify-content: center;
+}

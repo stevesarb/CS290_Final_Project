@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Layout Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+        <h1 class="site-title">Layout Calculator</h1>
+    </header>
+
+    <main>
+        <div id="inputs-container">
+
+            <!-- PIPE DIAMETER INPUT BOX -->
+            <div id="pipe-diameter-container" class="input-container">
+                <label for="input-pipe-diameter" class="input-label">PIPE DIAMETER</label>
+                <div class="input-box">
+                    <input type="text" name="input-pipe-diameter" id="pipe-diameter-input" class="input">
+                </div>
+            </div>
+
+            <!-- MEASUREMENT INPUT BOX -->
+            <div id="measurement-container" class="input-container">
+                <label for="input-measurement" class="input-label">MEASUREMENT</label>
+                <div class="input-box">
+                    <input type="text" name="input-measurement" id="measurement-input" class="input">
+                </div>
+                <div id="CC-CE-container">
+                    <div id="CC-button-container">
+                        <button id="CC-button" class="measurement-button">C-C</button>
+                    </div>
+                    <div id="CE-button-container">
+                        <button id="CE-button" class="measurement-button">C-E</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FITTING TYPE INPUT BOX -->
+            <div id="fitting-type-container" class="input-container">
+                <label for="input-fitting-type" class="input-label">FITTING TYPE</label>
+                <div id="type-90-45-container">
+                    <div id="90-button-container">
+                        <button id="90-button" class="fitting-type-button">90EL</button>
+                    </div>
+                    <div id="45-button-container">
+                        <button id="45-button" class="fitting-type-button">45EL</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OPTIONS BOX -->
+            <div id="options-container">
+                <div id="clear-button-container">
+                    <button id="clear-button" class="option-button">CLEAR</button>
+                </div>
+                <div id="add-section-button-container">
+                    <button id="add-section-button" class="option-button">ADD SECTION</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTIONS -->
+        <div id="output-container">
+
+            <div id="sections-container">
+                <!-- each individual section goes here -->
+                <div class="section" pipe-diameter="6" measurement="24" CC-or-CE="CC" fitting-type="90">
+                    <label for="section" class="section-label">SECTION A</label>
+                    <div class="section-calculation-container">24"</div>
+                    <!-- NOTE: add edit/delete button here -->
+                </div>
+
+                <!-- add more sections here when user selects "ADD SECTION"-->
+            </div>
+
+            <!-- total length and save project here -->
+            <div id="output-final-elements">
+                <div id="total-length-container">
+                    <label for="total-length" id="total-length-label">TOTAL PIPE LENGTH:</label>
+                    <div id="total-calculation-container">24"</div>
+                </div>
+
+                <div id="save-project-button-container">
+                    <button id="save-project-button">SAVE PROJECT</button>
+                </div>
+            </div>
+        </div>
+    </main>
+  </body>
+
+</html>
