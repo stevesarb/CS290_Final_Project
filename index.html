@@ -15,15 +15,25 @@
 
             <!-- PIPE DIAMETER INPUT BOX -->
             <div id="pipe-diameter-container" class="input-container">
-                <label for="input-pipe-diameter" class="input-label">PIPE DIAMETER</label>
+                <label for="input-pipe-diameter" class="input-label">PIPE DIAMETER:</label>
                 <div class="input-box">
-                    <input type="text" name="input-pipe-diameter" id="pipe-diameter-input" class="input">
+                    <!-- <input type="text" name="input-pipe-diameter" id="pipe-diameter-input" class="input"> -->
+                    <div class="filter-input-container">
+                        <select id="pipe-diameter-input" class="input" name="input-pipe-diameter">
+                            <option selected value="">Select Diameter</option>
+                            <option value="1">1"</option>
+                            <option value="2">2"</option>
+                            <option value="3">3"</option>
+                            <option value="4">4"</option>
+                            <option value="6">6"</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
             <!-- MEASUREMENT INPUT BOX -->
             <div id="measurement-container" class="input-container">
-                <label for="input-measurement" class="input-label">MEASUREMENT</label>
+                <label for="input-measurement" class="input-label">MEASUREMENT:</label>
                 <div class="input-box">
                     <input type="text" name="input-measurement" id="measurement-input" class="input">
                 </div>
@@ -32,19 +42,19 @@
                         <button id="CC-button" class="measurement-button">C-C</button>
                     </div>
                     <div id="CE-button-container">
-                        <button id="CE-button" class="measurement-button">C-E</button>
+                        <button id="CE-button" class="measurement-button pressed">C-E</button>
                     </div>
                 </div>
             </div>
 
             <!-- FITTING TYPE INPUT BOX -->
             <div id="fitting-type-container" class="input-container">
-                <label for="input-fitting-type" class="input-label">FITTING TYPE</label>
+                <label for="input-fitting-type" class="input-label">FITTING TYPE:</label>
                 <div id="type-90-45-container">
-                    <div id="90-button-container">
-                        <button id="90-button" class="fitting-type-button">90EL</button>
+                    <div class="fitting-type-button-container">
+                        <button id="90-button" class="fitting-type-button pressed">90EL</button>
                     </div>
-                    <div id="45-button-container">
+                    <div class="fitting-type-button-container">
                         <button id="45-button" class="fitting-type-button">45EL</button>
                     </div>
                 </div>
@@ -71,18 +81,19 @@
                     <div class="section-calculation-container">24"</div>
                     <!-- NOTE: add edit/delete button here -->
                 </div>
+                
 
                 <!-- add more sections here when user selects "ADD SECTION"-->
             </div>
 
             <!-- total length and save project here -->
             <div id="output-final-elements">
-                <div id="total-length-container">
-                    <label for="total-length" id="total-length-label">TOTAL PIPE LENGTH:</label>
-                    <div id="total-calculation-container">24"</div>
+                <div id="total-length-container" class="section">
+                    <label for="total-length" id="total-length-label">TOTAL LENGTH:</label>
+                    <div id="total-calculation-container">2444"</div>
                 </div>
 
-                <div id="save-project-button-container">
+                <div id="save-project-button-container" class="section">
                     <button id="save-project-button">SAVE PROJECT</button>
                 </div>
             </div>
